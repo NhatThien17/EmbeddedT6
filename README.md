@@ -237,3 +237,15 @@ int main()
 - Khi nào dùng Union: Union có rất nhiều member và tại 1 thời điểm mình chỉ sử dụng 1 member trong đó thôi thì ta sẽ dùng Union (ví dụ: Khi mua lap, ta sẽ có nhiều hãng để lựa chọn, nhưng ta chỉ có thể chọn 1 hãng để mua).
 
 </details>
+BIẾN STATIC CỤC BỘ :
+
+Chỉ được khởi tạo một lần, được sử dụng cho đến vòng đời của chương trình và được lưu lại giá trị sử dụng gần nhất.
+Chỉ được sử dụng trong hàm chứa nó.
+BIẾN STATIC TOÀN CỤC:
+
+Chỉ được khởi tạo một lần, được sử dụng cho đến vòng đời của chương trình, và được lưu lại giá trị sử dụng gần nhất.
+Chỉ sử dụng được trong file chứa nó, không include hoặc extern qua file khác.
+BIẾN VOLATILE:
+
+Được sử dụng khi giá trị của biến có thể thay đổi không báo trước, tránh việc sai sót do tính năng optimize của compiler ( nhìn code không thay đổi bỏ qua luôn). Ví dụ volatile int data = readADC();// Báo cho compiler không được optimize biến này
+Được sử dụng cho các biến thay đổi data, giá trị liên tục.
